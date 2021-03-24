@@ -4,6 +4,7 @@ WORKDIR /workdir
 RUN pip install \
     autopep8 \
     black \
+    Click \
     codecov \
     flake8 \
     mutmut \
