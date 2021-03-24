@@ -11,3 +11,10 @@ Describe 'src/say_hello.sh'
       The output should eq 'Hola Nepolin'
     End
 End
+
+Describe 'greetings'
+    It 'greets'
+      When call greetings funcion-1
+      The output should eq 'Hola None'
+    End
+End
