@@ -16,4 +16,6 @@ RUN pip install \
     pytest==5.0.1 \
     rope \
     typer
+RUN curl -fsSL https://git.io/shellspec | sh -s -- --yes
+ENV PATH="/root/.local/lib/shellspec:$PATH"
 CMD make
