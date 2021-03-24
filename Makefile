@@ -1,7 +1,10 @@
-.PHONY: clean tests 
+.PHONY: clean install tests
 
 clean:
 	rm --force --recursive tests/pytest/__pycache__
 
-tests:
+install:
+	pip install .
+
+tests: install
 	shellspec
