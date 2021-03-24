@@ -4,4 +4,5 @@ runner = CliRunner()
 
 
 def test_cli():
-    pass
+    result = runner.invoke(greetings, ["Nepolin"])
+    assert result.exit_code == 0
